@@ -17,7 +17,7 @@
           ><span class="location"><%=city  %>,<%=country  %></span>
         </div>
         <div class="weather-container">
-          <i class="weather-icon" data-feather="sun"><%=icon  %></i>
+          <i class="weather-icon" data-feather="sun"><img src="<%=icon  %>" alt=""></i>
           <h1 class="weather-temp"><%=temperature  %>°C</h1>
           <h3 class="weather-desc"><%=weather  %></h3>
         </div>
@@ -27,7 +27,7 @@
           <div class="today-info">
             <div class="precipitation">
               <span class="title">PRECIPITATION</span
-              ><span class="value"><%=  participation %> </span>
+              ><span class="value"><%= precipitation %> mm</span>
               <div class="clear"></div>
             </div>
             <div class="humidity">
@@ -43,9 +43,9 @@
         <div class="week-container">
           <ul class="week-list">
             <li>
-              <i class="day-icon" data-feather="sun"><%=icon  %></i
+              <i class="day-icon" data-feather="sun"><img src="<%=icon  %>" alt=""></i
               ><span class="day-name"><%= shortDayName  %></span
-              ><span class="day-temp"><%= weather %> °C</span>
+              ><span class="day-temp"><%= temperature %> °C</span>
             </li>
             <div class="clear"></div>
           </ul>
